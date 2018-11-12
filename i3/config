@@ -105,6 +105,8 @@ set $workspace9 9
 set $workspace10 10
 set $wsB b
 set $wsI i
+set $wsT t
+set $wsG g
 
 # switch to workspace
 bindsym $mod+1 workspace $workspace1
@@ -119,6 +121,8 @@ bindsym $mod+9 workspace $workspace9
 bindsym $mod+0 workspace $workspace10
 bindsym $mod+b workspace $wsB
 bindsym $mod+i workspace $wsI
+bindsym $mod+t workspace $wsT
+bindsym $mod+g workspace $wsG
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace $workspace1
@@ -133,10 +137,8 @@ bindsym $mod+Shift+9 move container to workspace $workspace9
 bindsym $mod+Shift+0 move container to workspace $workspace10
 bindsym $mod+Shift+b move container to workspace $wsB
 bindsym $mod+Shift+i move container to workspace $wsI
-
-assign [class="Xfce4-terminal"] $workspace2
-assign [class="qterminal"] $workspace2
-assign [class="XTerm"] $workspace2
+bindsym $mod+Shift+t move container to workspace $wsT
+bindsym $mod+Shift+g move container to workspace $wsG
 
 assign [class="Thunar"] $workspace3
 
@@ -152,7 +154,7 @@ assign [class="Firefox"] $wsB
 assign [class="QtCreator"] $wsI
 assign [class="jetbrains-pycharm-ce"] $wsI
 assign [class="Subl"] $workspace4
-assign [class="jetbrains-studio"] $wsI
+assign [class="jetbrains-studio"] $wsG
 assign [class="jetbrains-clion"] $wsI
 
 # reload the configuration file
@@ -193,6 +195,7 @@ bindsym $mod+r mode "resize"
 bar {
         tray_output primary
         status_command i3blocks 
+        # status_command polybar
 }
 
 focus_follows_mouse no
