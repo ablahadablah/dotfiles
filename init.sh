@@ -5,4 +5,3 @@ if [ -f ~/.zshrc ]; then
 fi
 
 ln -s $(pwd)/zsh/.zshrc ~/.zshrc
-source ~/.zshrc
