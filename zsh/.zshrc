@@ -1,4 +1,7 @@
-# The following lines were added by compinstall
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+alias ls='ls --color=auto'
 
 zstyle ':completion:*' completer _expand _complete _ignored _correct _approximate
 zstyle ':completion:*' matcher-list '' '' '' 'r:|[._-]=* r:|=*'
@@ -18,4 +21,13 @@ setopt autocd
 bindkey -v
 # End of lines configured by zsh-newuser-install
 
-eval $(thefuck --alias)
+dl() {
+    cd "$@" && ls;
+}
+
+alias gadd="git add ."
+alias gstat="git status"
+alias gacom="git commit ."
+alias gcomam="git commit --amend"
+alias gcd="git checkout"
+alias gpull="git pull"
