@@ -32,3 +32,5 @@ alias gcomam="git commit --amend"
 alias gcd="git checkout"
 alias gpull="git pull"
 alias gpush="git push"
+
+alias cpf="xclip -sel c <"
