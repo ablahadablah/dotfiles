@@ -1,4 +1,8 @@
 #!/bin/sh
 
-ln -s $(pwd)/zsh/.zshrc ~/.zshrc
+if [ -f ~/.zshrc ]; then
+    rm ~/.zshrc
+fi
 
+ln -s $(pwd)/zsh/.zshrc ~/.zshrc
+source ~/.zshrc

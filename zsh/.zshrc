@@ -27,7 +27,7 @@ dl() {
 
 alias gadd="git add ."
 alias gstat="git status"
-alias gacom="git commit ."
+alias gacom="git add . && git commit"
 alias gcomam="git commit --amend"
 alias gcd="git checkout"
 alias gpull="git pull"
