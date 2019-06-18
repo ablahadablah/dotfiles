@@ -25,8 +25,10 @@ dl() {
     cd "$@" && ls;
 }
 
+alias gad="git add"
 alias gadd="git add ."
 alias gstat="git status"
+alias gcom="git commit"
 alias gacom="git add . && git commit"
 alias gcomam="git commit --amend"
 alias gcd="git checkout"
