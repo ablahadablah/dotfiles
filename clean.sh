@@ -10,6 +10,7 @@ files+=(/home/user/.config/VK/Cache/)
 files+=(/home/user/.gradle/caches/)
 files+=(/home/user/.gradle/daemon/)
 files+=(~/Desktop)
+files+=(~/.yjp)
 
 for file in ~/Downloads/*
 do
