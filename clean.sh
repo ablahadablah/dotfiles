@@ -36,3 +36,5 @@ do
         rm -r ${file}
     fi
 done
+
+sudo paccache -r
