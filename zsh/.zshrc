@@ -27,7 +27,7 @@ dl() {
 
 alias gad="git add"
 alias gadd="git add ."
-alias gstat="git status"
+alias gst="git status"
 alias gcom="git commit"
 alias gacom="git add . && git commit"
 alias gcomam="git commit --amend"
@@ -38,3 +38,5 @@ alias gpsf="git push --force-with-lease"
 alias gf="git fetch"
 
 alias cpf="xclip -sel c <"
+
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
