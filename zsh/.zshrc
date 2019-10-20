@@ -36,7 +36,8 @@ alias gpull="git pull"
 alias gpush="git push"
 alias gpsf="git push --force-with-lease"
 alias gf="git fetch"
+alias gm="git merge --no-ff --no-commit"
 
-alias cpf="xclip -sel c <"
+alias clip="xclip -sel c <"
 
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
